@@ -9,12 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Landingpage">
+        <activity
+            android:name=".Landingpage"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Fire"
+            android:label="Fire Safety"
+            android:parentActivityName=".Landingpage">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Landingpage" />
+
+        </activity>
+        <activity
+            android:name=".Chemical"
+            android:label="Chemical Safety"
+            android:parentActivityName=".Landingpage">
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Landingpage" />
         </activity>
     </application>
 
