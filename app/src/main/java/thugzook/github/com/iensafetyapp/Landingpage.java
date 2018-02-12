@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class Landingpage extends AppCompatActivity {
 
@@ -16,11 +19,13 @@ public class Landingpage extends AppCompatActivity {
         setContentView(R.layout.activity_landingpage);
 
         // Variables for different menu options
-        final ImageView fire = (ImageView) findViewById(R.id.fire);
+        final TextView fire = (TextView) findViewById(R.id.fire);
         final ImageView chemical = (ImageView) findViewById(R.id.chemical);
         final ImageView resource1 = (ImageView) findViewById(R.id.resource1);
         final ImageView resource2 = (ImageView) findViewById(R.id.resource2);
         final ImageView resource3 = (ImageView) findViewById(R.id.resource3);
+
+        fire.setCompoundDrawablesWithIntrinsicBounds(R.drawable.fire, 0, 0, 0);
 
         // Detect if that menu option has been clicked
         fire.setOnClickListener(new View.OnClickListener() {

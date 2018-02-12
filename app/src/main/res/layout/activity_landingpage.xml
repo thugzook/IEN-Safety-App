@@ -5,15 +5,17 @@
     android:orientation="vertical"
     android:id = "@+id/touch">
 
-    <ImageView
+    <TextView
         android:id = "@+id/fire"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:clickable = "true"
-        android:background="#ff0000"
+        android:background="#FF0000"
         android:alpha="0.8"
-        android:layout_weight= "1"/>
-
+        android:layout_weight="4.25"
+        android:textSize="50dp"
+        android:text="hello"
+        />
 
     <ImageView
         android:id = "@+id/chemical"
@@ -22,7 +24,12 @@
         android:clickable = "true"
         android:background="#b2ff00"
         android:alpha="0.8"
+        android:src="@drawable/fire"
+        android:paddingLeft = "20dp"
+        android:scaleType="fitStart"
         android:layout_weight= "1"/>
+
+
 
     <ImageView
         android:id = "@+id/resource1"
@@ -31,6 +38,9 @@
         android:clickable = "true"
         android:background="#506e9b"
         android:alpha="0.8"
+        android:src="@drawable/fire"
+        android:paddingLeft = "20dp"
+        android:scaleType="fitStart"
         android:layout_weight= "1"/>
 
     <ImageView
@@ -40,6 +50,9 @@
         android:clickable = "true"
         android:background="#96804e"
         android:alpha="0.8"
+        android:src="@drawable/fire"
+        android:paddingLeft = "20dp"
+        android:scaleType="fitStart"
         android:layout_weight= "1"/>
     <ImageView
         android:id = "@+id/resource3"
@@ -48,6 +61,9 @@
         android:clickable = "true"
         android:background="#a53a95"
         android:alpha="0.8"
+        android:src="@drawable/fire"
+        android:paddingLeft = "20dp"
+        android:scaleType="fitStart"
         android:layout_weight= "1"/>
 
 
