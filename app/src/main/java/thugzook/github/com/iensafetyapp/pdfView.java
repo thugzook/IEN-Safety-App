@@ -86,8 +86,6 @@ public class pdfView extends AppCompatActivity {
 
     /**Class for asynchronous tasks**/
     public class DownloadAsync extends AsyncTask<AsyncParameters, Void, Void> {
-
-        // Container for all parameters of DownloadAsync
         ProgressDialog pDialog;
 
         @Override

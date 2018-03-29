@@ -23,23 +23,10 @@ public class Landingpage extends AppCompatActivity {
 
         // Variables for different menu options
         final TextView fire = (TextView) findViewById(R.id.fire);
-        final ImageView chemical = (ImageView) findViewById(R.id.chemical);
-        final ImageView resource1 = (ImageView) findViewById(R.id.resource1);
-        final ImageView resource2 = (ImageView) findViewById(R.id.resource2);
-        final ImageView resource3 = (ImageView) findViewById(R.id.resource3);
-
-        //fire.setCompoundDrawablesWithIntrinsicBounds(R.drawable.fire, 0, 0, 0);
-        fire.getViewTreeObserver()
-                .addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-                    @Override
-                    public void onGlobalLayout() {
-                        Drawable img = Landingpage.this.getResources().getDrawable(
-                                R.drawable.fire);
-                        img.setBounds(0, 0, img.getIntrinsicWidth() * fire.getMeasuredHeight() / img.getIntrinsicHeight(), fire.getMeasuredHeight());
-                        fire.setCompoundDrawables(img, null, null, null);
-
-                    }
-                });
+        final TextView chemical = (TextView) findViewById(R.id.chemical);
+        final TextView resource1 = (TextView) findViewById(R.id.resource1);
+        final TextView resource2 = (TextView) findViewById(R.id.resource2);
+        final TextView resource3 = (TextView) findViewById(R.id.resource3);
 
         // Detect if that menu option has been clicked
         fire.setOnClickListener(new View.OnClickListener() {

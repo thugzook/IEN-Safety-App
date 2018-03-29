@@ -1,71 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/touch"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:id = "@+id/touch">
+    android:orientation="vertical">
 
     <TextView
-        android:id = "@+id/fire"
-        android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:clickable = "true"
-        android:background="#FF0000"
-        android:alpha="0.8"
-        android:layout_weight="4.25"
-        android:textSize="75dp"
-        android:text="hello"
-        android:textColor="#000"
-        />
-
-    <ImageView
-        android:id = "@+id/chemical"
+        android:id="@+id/fire"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable = "true"
-        android:background="#b2ff00"
-        android:alpha="0.8"
-        android:src="@drawable/fire"
-        android:paddingLeft = "20dp"
-        android:scaleType="fitStart"
-        android:layout_weight= "1"/>
+        android:layout_marginBottom="-10dp"
+        android:layout_weight="1"
+        android:background="#ffb3bd"
+        android:clickable="true"
+        android:drawableLeft="@drawable/fire"
+        android:gravity="bottom"
+        android:maxHeight="200dp"
+        android:paddingLeft="10dp"
+        android:text=" FIRE"
+        android:textColor="#FFFFFF"
+        android:textSize="80dp"
+        android:textStyle="bold" />
 
-
-
-    <ImageView
-        android:id = "@+id/resource1"
+    <TextView
+        android:id="@+id/chemical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable = "true"
-        android:background="#506e9b"
-        android:alpha="0.8"
-        android:src="@drawable/fire"
-        android:paddingLeft = "20dp"
-        android:scaleType="fitStart"
-        android:layout_weight= "1"/>
+        android:layout_marginBottom="-10dp"
+        android:layout_weight="1"
+        android:background="#ff92"
+        android:clickable="true"
+        android:drawableLeft="@drawable/fire"
+        android:gravity="bottom"
+        android:maxHeight="200dp"
+        android:paddingLeft="10dp"
+        android:text=" CHEMICAL"
+        android:textColor="#FFFFFF"
+        android:textSize="80dp"
+        android:textStyle="bold" />
 
-    <ImageView
-        android:id = "@+id/resource2"
+
+    <TextView
+        android:id="@+id/resource1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable = "true"
-        android:background="#96804e"
-        android:alpha="0.8"
-        android:src="@drawable/fire"
-        android:paddingLeft = "20dp"
-        android:scaleType="fitStart"
-        android:layout_weight= "1"/>
-    <ImageView
-        android:id = "@+id/resource3"
+        android:layout_marginBottom="-10dp"
+        android:layout_weight="1"
+        android:background="#dd12"
+        android:clickable="true"
+        android:drawableLeft="@drawable/fire"
+        android:gravity="bottom"
+        android:maxHeight="200dp"
+        android:paddingLeft="10dp"
+        android:text=" RESOURCE"
+        android:textColor="#FFFFFF"
+        android:textSize="80dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resource2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable = "true"
-        android:background="#a53a95"
-        android:alpha="0.8"
-        android:src="@drawable/fire"
-        android:paddingLeft = "20dp"
-        android:scaleType="fitStart"
-        android:layout_weight= "1"/>
+        android:layout_marginBottom="-10dp"
+        android:layout_weight="1"
+        android:background="#dd2"
+        android:clickable="true"
+        android:drawableLeft="@drawable/fire"
+        android:gravity="bottom"
+        android:maxHeight="200dp"
+        android:paddingLeft="10dp"
+        android:text=" RESOURCE"
+        android:textColor="#FFFFFF"
+        android:textSize="80dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resource3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:layout_weight="1"
+        android:background="#dd19"
+        android:clickable="true"
+        android:drawableLeft="@drawable/fire"
+        android:gravity="bottom"
+        android:maxHeight="200dp"
+        android:paddingLeft="10dp"
+        android:text=" RESOURCE"
+        android:textColor="#FFFFFF"
+        android:textSize="80dp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>
