@@ -6,8 +6,11 @@
 
    <TextView
        android:id="@+id/nameSDS"
+       android:layout_marginLeft="10sp"
+       android:padding="10sp"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:text="hello"
-       android:textSize="40dp"/>
+       android:text="chem"
+       android:textColor="#000"
+       android:textSize="30sp"/>
 </LinearLayout>

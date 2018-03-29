@@ -21,17 +21,14 @@ public class ListAdapter extends ArrayAdapter {
     //store URL
     private final String[] URLs;
 
-    //store filenames
-    private final String[] fileName;
 
-    public ListAdapter(Activity context, String[] nameArrayParam, String[] URLsParam, String[] fileNameParam) {
+    public ListAdapter(Activity context, String[] nameArrayParam, String[] URLsParam) {
 
         super(context,R.layout.sds_row , nameArrayParam);
 
         this.context=context;
         this.nameArray = nameArrayParam;
         this.URLs = URLsParam;
-        this.fileName = fileNameParam;
     }
 
     public View getView(int position, View view, ViewGroup parent) {

@@ -54,7 +54,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Fire" />
         </activity>
-        <activity android:name=".SDS"></activity>
+        <activity android:name=".SDS" />
+        <activity android:name=".test"></activity>
     </application>
 
 </manifest>
